@@ -2,11 +2,10 @@
   "name": "typescript-type-writer",
   "version": "1.0.0",
   "description": "A short script used to copy type declaration files into node_modules/@types",
-  "main": "index.js",
   "scripts": {
     "build": "npm run build:src",
     "build:src": "npx tsc -p .",
-    "postinstall": "npm run build && npm link",
+    "postinstall": "npm link",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
