@@ -12,7 +12,7 @@ exports.default = () => {
         // The path to all project-defined module type files
         const typeFilesPath = path_1.resolve(rootPath, '@types');
         // An array of all files within project types directory
-        const typeDirectories = fs_1.readdirSync(path_1.resolve(__dirname, './../@types'), 'UTF8');
+        const typeDirectories = fs_1.readdirSync(typeFilesPath, 'UTF8');
         const typeFiles = [];
         typeDirectories.forEach(name => {
             typeFiles.push(util_1.getTypeDeclarationsFileContent(typeFilesPath, name));

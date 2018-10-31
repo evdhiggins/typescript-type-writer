@@ -15,7 +15,7 @@ export default () => {
     const typeFilesPath: string = resolve(rootPath, '@types');
 
     // An array of all files within project types directory
-    const typeDirectories: string[] = readdirSync(resolve(__dirname, './../@types'), 'UTF8') as string[];
+    const typeDirectories: string[] = readdirSync(typeFilesPath, 'UTF8') as string[];
 
     const typeFiles: TypeFile[] = [];
 
