@@ -6,12 +6,12 @@ import { mkDirIfNotExist, getTypeDeclarationsFileContent, dirExists, handleError
 export default () => {
   const rootPath: string = resolve(process.cwd());
 
-  if (!dirExists(rootPath, '@types')) {
-    throw new Error(`An @types directory doesn't exist at the assumed project root (${rootPath})`);
+  if (!dirExists(rootPath, 'types')) {
+    throw new Error(`A 'types' directory doesn't exist at the assumed project root (${rootPath})`);
   }
 
   // The path to all project-defined module type files
-  const typeFilesPath: string = resolve(rootPath, '@types');
+  const typeFilesPath: string = resolve(rootPath, 'types');
 
   // An array of all files within project types directory
   const typeDirectories: string[] = readdirSync(typeFilesPath, 'UTF8') as string[];
