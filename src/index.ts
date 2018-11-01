@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import deploy from './deploy';
 import generate from './generate';
 import { handleError } from './util';
