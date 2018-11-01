@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "write-types": "./bin/index.js"
+    "ttw": "./bin/index.js"
   },
   "repository": {
     "type": "git",
