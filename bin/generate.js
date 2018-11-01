@@ -13,7 +13,7 @@ exports.default = () => {
         throw new Error('No module name found.');
     }
     if (moduleName.replace(/[.\\/]/g, '') === '') {
-        throw new Error(`Invalid module name (${moduleName.italic}`);
+        throw new Error(`Invalid module name (${moduleName.italic})`);
     }
     util_1.mkDirIfNotExist(path_1.resolve(rootPath, 'types'));
     if (util_1.dirExists(path_1.resolve(rootPath, 'types'), moduleName)) {
