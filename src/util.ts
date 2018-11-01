@@ -64,8 +64,8 @@ export const mkDirIfNotExist = (dirPath: string | string[]): void => {
  * @param error A javascript error object
  */
 export const handleError = (error: Error): void => {
-  console.error('The script encountered an error:'.bgYellow.black);
-  console.error(error.message.bgRed);
+  const errorTitle: string = 'Error:'.bgYellow.black;
+  console.error(`${errorTitle} ${error.message}`);
   console.error('Exiting...');
   process.exit();
 };

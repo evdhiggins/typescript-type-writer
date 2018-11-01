@@ -55,8 +55,8 @@ exports.mkDirIfNotExist = (dirPath) => {
  * @param error A javascript error object
  */
 exports.handleError = (error) => {
-    console.error('The script encountered an error:'.bgYellow.black);
-    console.error(error.message.bgRed);
+    const errorTitle = 'Error:'.bgYellow.black;
+    console.error(`${errorTitle} ${error.message}`);
     console.error('Exiting...');
     process.exit();
 };
